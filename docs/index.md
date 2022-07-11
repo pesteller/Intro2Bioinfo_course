@@ -36,7 +36,7 @@ head -n 1 $GTEX | tr "\t" "\n" > header.txt
 **Q.** Apart from using the `head` command, which other alternatives could you use to obtain the header? (hide this chunck)
 
 <details><summary markdown="span">Check the answer</summary>
-```python
+```
 grep "Name" $GTEX
 grep -v "ENS" $GTEX
 ```
@@ -89,6 +89,32 @@ We can see how the only difference between the two files is in the header. Which
 ```
 sed -i 's/ //g' $GTEX
 ```
+
+Let's check which is the column that has information about the "Liver".
+There are several ways to do so:
+* Option 1:
+```
+awk '{print $38}' $GTEX
+```
+
+* Option 2:
+```
+# First transpose the header line
+head -1 $GTEX | tr "\t" "\n"
+# Then we check with `grep` which is the position of "Liver"
+head -1 $GTEX | tr "\t" "\n" | fgrep -n "Liver"
+# And now we get the specific value and save it into a variable
+col=$(head -1 $GTEX | tr "\t" "\n" | fgrep -n "Liver" | cut -d ":" -f1)
+# This we can use in `awk`
+ awk -v col=$col '{print $col}' $GTEX
+```
+
+* Option 2.1:
+```
+#Using the `$col` variable but with `cut`:
+cut -f$col $GTEx | head
+```
+
 
 
 
