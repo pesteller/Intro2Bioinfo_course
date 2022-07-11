@@ -35,13 +35,16 @@ head -n 1 $GTEX | tr "\t" "\n" > header.txt
 ```
 **Q.** Apart from using the `head` command, which other alternatives could you use to obtain the header? (hide this chunck)
 
-<details><summary markdown="span">Check the answer</summary>
-```
+<details><summary>See answer</summary>
+<p>
+
+```sh
 grep "Name" $GTEX
 grep -v "ENS" $GTEX
 ```
+
+</p>
 </details>
-<br/>
 
 
 ```
