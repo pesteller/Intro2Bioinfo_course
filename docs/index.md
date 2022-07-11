@@ -35,14 +35,17 @@ head -n 1 $GTEX | tr "\t" "\n" > header.txt
 ```
 **Q.** Apart from using the `head` command, which other alternatives could you use to obtain the header? (hide this chunck)
 
+{::options parse_block_html="true" /}
+
+<details><summary markdown="span">Check the answer</summary>
+```bash
+grep "Name" $GTEX
+grep -v "ENS" $GTEX
 ```
-<details><summary>Code example</summary><p>
-  
-  grep "Name" $GTEX
-  grep -v "ENS" $GTEX
-  
-</p></details>
-```
+</details>
+<br/>
+
+{::options parse_block_html="false" /}
 
 ```
 grep "Name" $GTEX
@@ -70,5 +73,25 @@ For this we will use `sed` to remove the spaces within IDs:
 ``` 
 head -1 $GTEX | sed 's/ //g' | awk '{FS = "\t"; print NF}'
 ```
+
+But what if we want to do this change and keep it in the orginal file withtout creating a new one?
+One could use `sed -i`; which directly modifies the input file. Careful: you need to be sure that the pattern you want to change is only present in your header so that it does not change the rest of the file.
+
+In our case we first create a subfile:
+```
+sed  's/ //g' $GTEX > GTEX2
+``` 
+
+Then we use `diff` to check the differences between the original file and the subfile we have create as a sannity check:
+```
+diff $GTEX GTEX2
+```
+
+We can see how the only difference between the two files is in the header. Which confirms that we can use `sed -i` in the original file without messing up with the rest of the data:
+
+```
+sed -i 's/ //g' $GTEX
+```
+
 
 
