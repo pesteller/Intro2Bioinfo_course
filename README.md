@@ -5,8 +5,9 @@
 Crash course for 1st Year PhD students on the basics of bioinformatics (July 2022).
 
 ## I. Basics of bash
-This is the [link](https://pesteller.github.io/Intro2Bioinfo_course/) to the first part of the session.
 
+1. [Slides](https://docs.google.com/presentation/d/1jem2JXrsB3Sj4-v2sp_3t3i2vIG6_I6FhwPZ-wTPQdo/edit?usp=sharing) 
+2. [Practicum](https://pesteller.github.io/Intro2Bioinfo_course/)
 ## II. R for Bioinformatics
 
 ## Recommended literature and other resources
