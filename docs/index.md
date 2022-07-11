@@ -35,8 +35,6 @@ head -n 1 $GTEX | tr "\t" "\n" > header.txt
 ```
 **Q.** Apart from using the `head` command, which other alternatives could you use to obtain the header? (hide this chunck)
 
-{::options parse_block_html="true" /}
-
 <details><summary markdown="span">Check the answer</summary>
 ```bash
 grep "Name" $GTEX
@@ -45,7 +43,6 @@ grep -v "ENS" $GTEX
 </details>
 <br/>
 
-{::options parse_block_html="false" /}
 
 ```
 grep "Name" $GTEX
