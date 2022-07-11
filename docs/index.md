@@ -47,6 +47,17 @@ grep -v "ENS" $GTEX
 </details>
 
 
+<details closed>
+
+  <summary>click to collapse</summary>
+
+  ```sh
+  grep "Name" $GTEX
+  grep -v "ENS" $GTEX
+  ```
+
+</details>
+
 ```
 grep "Name" $GTEX
 grep -v "ENS" $GTEX
