@@ -1,8 +1,4 @@
-# This
-## is
-### a
-#### test
-
+# Part 1. Bash language
 
 
 
@@ -10,7 +6,7 @@ To start download the [working document](https://github.com/pesteller/Intro2Bioi
 This is expression data from GTEx version 8.
 
 
-# Exploring the dataset
+## Exploring the dataset
 
 Save the dataset in a bash variable:
 ```
@@ -22,10 +18,18 @@ How does our dataset look like?
 less -S $GTEX
 ```
 
-**Q1** Which is the difference between `less` and `less -S`?
+**Q1.** Which is the difference between `less` and `less -S`?
 
 If you want to see it more nicely and column aligned you can use `column -t` option:
 ```
 less -S $GTEX | column -t | less -S
 ```
 
+You can also check which are the first or the last rows of your document by using `head $yourfile` or `tail $yourfile`.
+**Q2.** How many lines does `head` show by default? Use `wc -l` to check it.
+
+```
+{
+  head $GTEX | wc -l
+}
+```
