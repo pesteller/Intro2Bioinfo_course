@@ -54,6 +54,21 @@ grep -v "ENS" $GTEX
 tail -n +1 $GTEX | wc -l
 ```
 
+Now we want to check how many tissues have been considered. We will do this with `awk`:
 
+```
+awk '{print NF}' $GTEX | head
+```
+
+You can see that the number of columns varies between rows. This is because there are spaces within IDs of the header (e.g. Adrenal Gland) 
+Let's specify that the field separator between columns is a tab `\t` and check if this corrects the issue.
+```
+awk 'FS = "\t" {print NF}' $GTEX | head
+```
+This does not solve the problem, because `awk` cannot distinguish between spaces and tabs in this case.
+For this we will use `sed` to remove the spaces within IDs:
+``` 
+head -1 $GTEX | sed 's/ //g' | awk '{FS = "\t"; print NF}'
+```
 
 
