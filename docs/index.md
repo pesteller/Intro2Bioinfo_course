@@ -18,7 +18,8 @@ How does our dataset look like?
 less -S $GTEX
 ```
 
-******* INSERT sCREENSHOT OF DATASET
+![alt text](image.jpg)
+
 
 **Q.** Which is the difference between `less` and `less -S`?
 
