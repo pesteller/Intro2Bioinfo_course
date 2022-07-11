@@ -120,5 +120,15 @@ cut -f$col $GTEx | head
 awk -v col=$col '{print $col}' $GTEX | tail -n 2 | awk '{sum+=$0} END {print sum/NR}'
 ```
 
-Let's get some other metrics:
+Let's get some other metrics (min and max):
+```
+tail -n +2 $GTEX | cut -f $col | sort | tail
+# We do not want this type of number sorting, so we add: -V or -g (depending on the version)
+tail -n +2 $GTEX | cut -f $col | sort -V | tail
+tail -n +2 $GTEX | cut -f $col | sort -g | tail
+```
 
+**Q.** What is the minimum? How many times is it present?
+```
+tail -n +2 $GTEX | cut -f $col | sort -g | uniq -c | sort -nr | head
+```
