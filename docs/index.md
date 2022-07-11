@@ -115,6 +115,10 @@ col=$(head -1 $GTEX | tr "\t" "\n" | fgrep -n "Liver" | cut -d ":" -f1)
 cut -f$col $GTEx | head
 ```
 
+**Q** What is the average expression value in the Liver?
+```
+awk -v col=$col '{print $col}' $GTEX | tail -n 2 | awk '{sum+=$0} END {print sum/NR}'
+```
 
-
+Let's get some other metrics:
 
