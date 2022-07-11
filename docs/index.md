@@ -1,7 +1,5 @@
 # Part 1. Bash language
 
-
-
 To start download the [working document](https://github.com/pesteller/Intro2Bioinfo_course/blob/main/GTEx_v8_gene_median_tpm.gct).
 This is expression data from GTEx version 8.
 
@@ -17,8 +15,7 @@ How does our dataset look like?
 ```
 less -S $GTEX
 ```
-
-![alt text](image.jpg)
+![image](https://user-images.githubusercontent.com/68989675/178304599-195eb9b0-250f-4ac9-8f5b-5e19a735260c.png)
 
 
 **Q.** Which is the difference between `less` and `less -S`?
