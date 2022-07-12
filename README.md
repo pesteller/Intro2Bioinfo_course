@@ -10,6 +10,6 @@ Crash course for 1st Year PhD students on the basics of bioinformatics (July 202
 2. [Practicum](https://pesteller.github.io/Intro2Bioinfo_course/)
 ## II. R for Bioinformatics
 
-## Recommended literature and other resources
+## III. Recommended literature and other resources
 * Buffalo, Vince. 2015. Bioinformatics data skills. (O'Reilly)
 * [GeeksforGeeks webpage](https://www.geeksforgeeks.org/awk-command-unixlinux-examples/) with awk command examples (and others)
