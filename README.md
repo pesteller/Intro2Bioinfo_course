@@ -15,5 +15,3 @@ Crash course for 1st Year PhD students on the basics of bioinformatics (July 202
 * [GeeksforGeeks webpage](https://www.geeksforgeeks.org/awk-command-unixlinux-examples/) with awk command examples (and others)
 
 
-
-#TEST
