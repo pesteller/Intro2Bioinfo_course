@@ -35,7 +35,7 @@ head -n 1 $GTEX | tr "\t" "\n" > header.txt
 <details><summary>See answer</summary>
 <p>
 
-```sh
+```python
 grep "Name" $GTEX
 grep -v "ENS" $GTEX
 ```
@@ -48,7 +48,7 @@ grep -v "ENS" $GTEX
 
   <summary>click to collapse</summary>
 
-  ```sh
+  ```python
   grep "Name" $GTEX
   grep -v "ENS" $GTEX
   ```
