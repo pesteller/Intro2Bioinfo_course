@@ -343,6 +343,9 @@ pre code {
 <h2>Headers</h2>
 <p>Using “#” at the beginning of a line we can format it as a Header, and the more # we put, the lower level will this have. See:</p>
 </div>
+</div>
+<div id="header-1" class="section level1">
+<h1>Header 1</h1>
 <div id="header-2" class="section level2">
 <h2>Header 2</h2>
 <div id="header-3" class="section level3">
@@ -381,11 +384,43 @@ pre code {
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>If you do not want to show the coding block on your final document you set <code>echo = FALSE</code> inside the <code>{r}</code>, which will look like: <code>{r, echo = FALSE}</code></p>
+<p>If you do not want to show the coding block on your final document you set <code>echo = FALSE</code> inside the <code>{r}</code>, which will look like: <code>{r, echo = FALSE}</code>.</p>
+<p>It is very useful to finish your Rmarkdown report with the following code. It contains all the information regarding the R version used as well as the packages that you loaded. Therefore, if in the future you need to run the code again you will know these specifications.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2Vzc2lvbkluZm8oKVxuXG5gYGAifQ== -->
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code></pre></div>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiUiB2ZXJzaW9uIDQuMS4yICgyMDIxLTExLTAxKVxuUGxhdGZvcm06IHg4Nl82NC1hcHBsZS1kYXJ3aW4xNy4wICg2NC1iaXQpXG5SdW5uaW5nIHVuZGVyOiBtYWNPUyBNb250ZXJleSAxMi4zLjFcblxuTWF0cml4IHByb2R1Y3RzOiBkZWZhdWx0XG5MQVBBQ0s6IC9MaWJyYXJ5L0ZyYW1ld29ya3MvUi5mcmFtZXdvcmsvVmVyc2lvbnMvNC4xL1Jlc291cmNlcy9saWIvbGliUmxhcGFjay5keWxpYlxuXG5sb2NhbGU6XG5bMV0gZW5fVVMuVVRGLTgvZW5fVVMuVVRGLTgvZW5fVVMuVVRGLTgvQy9lbl9VUy5VVEYtOC9lbl9VUy5VVEYtOFxuXG5hdHRhY2hlZCBiYXNlIHBhY2thZ2VzOlxuWzFdIHN0YXRzICAgICBncmFwaGljcyAgZ3JEZXZpY2VzIHV0aWxzICAgICBkYXRhc2V0cyAgbWV0aG9kcyAgIGJhc2UgICAgIFxuXG5vdGhlciBhdHRhY2hlZCBwYWNrYWdlczpcblsxXSBkZXRhaWxzXzAuMy4wXG5cbmxvYWRlZCB2aWEgYSBuYW1lc3BhY2UgKGFuZCBub3QgYXR0YWNoZWQpOlxuIFsxXSBSY3BwXzEuMC44ICAgICAgIHBpbGxhcl8xLjcuMCAgICAgY29tcGlsZXJfNC4xLjIgICBic2xpYl8wLjMuMSAgICAgIGpxdWVyeWxpYl8wLjEuNCAgdG9vbHNfNC4xLjIgICAgICBkaWdlc3RfMC42LjI5ICAgIGpzb25saXRlXzEuOC4wICAgZXZhbHVhdGVfMC4xNCAgICBsaWZlY3ljbGVfMS4wLjEgXG5bMTFdIHRpYmJsZV8zLjEuNiAgICAgcG5nXzAuMS03ICAgICAgICBwa2djb25maWdfMi4wLjMgIHJsYW5nXzEuMC4yICAgICAgdGlkeWdyYXBoXzEuMi4wICBpZ3JhcGhfMS4yLjExICAgIERCSV8xLjEuMiAgICAgICAgY2xpXzMuMi4wICAgICAgICB5YW1sXzIuMy41ICAgICAgIHhmdW5fMC4yOSAgICAgICBcblsyMV0gZmFzdG1hcF8xLjEuMCAgICB4bWwyXzEuMy4zICAgICAgIHdpdGhyXzIuNS4wICAgICAgaHR0cl8xLjQuMiAgICAgICBkcGx5cl8xLjAuNyAgICAgIHN0cmluZ3JfMS40LjAgICAga25pdHJfMS4zNyAgICAgICBkZXNjXzEuNC4wICAgICAgIGdlbmVyaWNzXzAuMS4xICAgdmN0cnNfMC40LjAgICAgIFxuWzMxXSBzYXNzXzAuNC4xICAgICAgIGdyaWRfNC4xLjIgICAgICAgcnByb2pyb290XzIuMC4yICB0aWR5c2VsZWN0XzEuMS4xIGdsdWVfMS42LjIgICAgICAgUjZfMi41LjEgICAgICAgICBmYW5zaV8xLjAuMyAgICAgIHJtYXJrZG93bl8yLjExICAgcHVycnJfMC4zLjQgICAgICB0aWR5cl8xLjEuNCAgICAgXG5bNDFdIGNsaXByXzAuNy4xICAgICAgbWFncml0dHJfMi4wLjMgICBlbGxpcHNpc18wLjMuMiAgIGh0bWx0b29sc18wLjUuMiAgYXNzZXJ0dGhhdF8wLjIuMSB1dGY4XzEuMi4yICAgICAgIHN0cmluZ2lfMS43LjYgICAgY3JheW9uXzEuNS4xICAgIFxuIn0= -->
+<pre><code>R version 4.1.2 (2021-11-01)
+Platform: x86_64-apple-darwin17.0 (64-bit)
+Running under: macOS Monterey 12.3.1
+
+Matrix products: default
+LAPACK: /Library/Frameworks/R.framework/Versions/4.1/Resources/lib/libRlapack.dylib
+
+locale:
+[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] details_0.3.0
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_1.0.8       pillar_1.7.0     compiler_4.1.2   bslib_0.3.1      jquerylib_0.1.4  tools_4.1.2      digest_0.6.29    jsonlite_1.8.0   evaluate_0.14    lifecycle_1.0.1 
+[11] tibble_3.1.6     png_0.1-7        pkgconfig_2.0.3  rlang_1.0.2      tidygraph_1.2.0  igraph_1.2.11    DBI_1.1.2        cli_3.2.0        yaml_2.3.5       xfun_0.29       
+[21] fastmap_1.1.0    xml2_1.3.3       withr_2.5.0      httr_1.4.2       dplyr_1.0.7      stringr_1.4.0    knitr_1.37       desc_1.4.0       generics_0.1.1   vctrs_0.4.0     
+[31] sass_0.4.1       grid_4.1.2       rprojroot_2.0.2  tidyselect_1.1.1 glue_1.6.2       R6_2.5.1         fansi_1.0.3      rmarkdown_2.11   purrr_0.3.4      tidyr_1.1.4     
+[41] clipr_0.7.1      magrittr_2.0.3   ellipsis_0.3.2   htmltools_0.5.2  assertthat_0.2.1 utf8_1.2.2       stringi_1.7.6    crayon_1.5.1    </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiSUJFQ291cnNlIgphdXRob3I6ICJNYXJpbmEgQWx2YXJleiAmIFBhdWxhIEVzdGVsbGVyIgpkYXRlOiAnMjAyMi0wNy0xMScKb3V0cHV0OiAKICBodG1sX25vdGVib29rOiAKICAgIGhpZ2hsaWdodDogcHlnbWVudHMKLS0tCgoKCiMgMXN0IGxvb2sgYXQgUm1hcmtkb3duCgpgYGB7ciBzZXR1cCwgaW5jbHVkZT1GQUxTRX0Ka25pdHI6Om9wdHNfY2h1bmskc2V0KGVjaG8gPSBUUlVFKQpgYGAKCiMjIFIgTWFya2Rvd24KClRoaXMgaXMgYW4gUiBNYXJrZG93biBkb2N1bWVudC4gTWFya2Rvd24gaXMgYSBzaW1wbGUgZm9ybWF0dGluZyBzeW50YXggZm9yIGF1dGhvcmluZyBIVE1MLCBQREYsIGFuZCBNUyBXb3JkIGRvY3VtZW50cy4gRm9yIG1vcmUgZGV0YWlscyBvbiB1c2luZyBSIE1hcmtkb3duIHNlZSA8aHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbT4uCgpXaGVuIHlvdSBjbGljayB0aGUgKipLbml0KiogYnV0dG9uIGEgZG9jdW1lbnQgd2lsbCBiZSBnZW5lcmF0ZWQgdGhhdCBpbmNsdWRlcyBib3RoIGNvbnRlbnQgYXMgd2VsbCBhcyB0aGUgb3V0cHV0IG9mIGFueSBlbWJlZGRlZCBSIGNvZGUgY2h1bmtzIHdpdGhpbiB0aGUgZG9jdW1lbnQuIFlvdSBjYW4gZW1iZWQgYW4gUiBjb2RlIGNodW5rIGxpa2UgdGhpczoKCmBgYHtyIGNhcnN9CnN1bW1hcnkoY2FycykKYGBgCgojIyBJbmNsdWRpbmcgUGxvdHMKCllvdSBjYW4gYWxzbyBlbWJlZCBwbG90cywgZm9yIGV4YW1wbGU6CgpgYGB7ciBwcmVzc3VyZSwgZWNobz1GQUxTRX0KcGxvdChwcmVzc3VyZSkKYGBgCgpOb3RlIHRoYXQgdGhlIGBlY2hvID0gRkFMU0VgIHBhcmFtZXRlciB3YXMgYWRkZWQgdG8gdGhlIGNvZGUgY2h1bmsgdG8gcHJldmVudCBwcmludGluZyBvZiB0aGUgUiBjb2RlIHRoYXQgZ2VuZXJhdGVkIHRoZSBwbG90LgoKCiMgRm9ybWF0dGluZyB3aXRoIFJtYXJrZG93bgoKIyMgSGVhZGVycwoKVXNpbmcgIiMiIGF0IHRoZSBiZWdpbm5pbmcgb2YgYSBsaW5lIHdlIGNhbiBmb3JtYXQgaXQgYXMgYSBIZWFkZXIsIGFuZCB0aGUgbW9yZSAjIHdlIHB1dCwgdGhlIGxvd2VyIGxldmVsIHdpbGwgdGhpcyBoYXZlLgpTZWU6CgojIyBIZWFkZXIgMgojIyMgSGVhZGVyIDMKIyMjIyBIZWFkZXIgNAojIyMjIEhlYWRlciA1CgojIyBPdGhlciBmb3JtYXR0aW5nIG9wdGlvbnMKCllvdSBjYW4gaGlnaGxpZ2h0IHRleHQ6ICoqYm9sZCoqIHRleHQsICppdGFsaWNzKiwgYW5kICoqKmJvdGgqKiouCgpPciB5b3UgY2FuIGV2ZW4gY3JlYXRlIGJ1bGxldCBsaXN0czoKCi0gMXN0IFBoRCB5ZWFyCi0gMm5kIFBoRCB5ZWFyCi0gM3JkIFBoRCB5ZWFyCiogNHRoIFBoRCB5ZWFyCgojIyBPdGhlciBiYXNpYyBmb3JtYXRpbmcgb3B0aW9uczoKCkNsaWNrIGF0IHRoZSBib3R0b20gd2hlZWwgYnV0dG9uLCB0aGVuIGdvIHRvICJPdXRwdXQgb3B0aW9ucy4uLiIgYW5kIHRoZXJlIHlvdSBjYW4gY2hvb3NlIGEgdGhlbWUsIGluY2x1ZGUgYSB0YWJsZSBvZiBjb250ZW50cywgZXRjLgoKCiMgQ29kaW5nIGJsb2NrcwoKWW91IGNhbiBpbnNlcnQgYSBuZXcgY29kaW5nIGJsb2NrIGJ5IGNsaWNraW5nIEN0cmwrQWx0K2kgKFdpbmRvd3MpOgpgYGB7cn0KIyB0aGlzIGlzIGEgY29kaW5nIGJsb2NrCmBgYAoKCklmIHlvdSBkbyBub3Qgd2FudCB0byBzaG93IHRoZSBjb2RpbmcgYmxvY2sgb24geW91ciBmaW5hbCBkb2N1bWVudCB5b3Ugc2V0IGBlY2hvID0gRkFMU0VgIGluc2lkZSB0aGUgYHtyfWAsIHdoaWNoIHdpbGwgbG9vayBsaWtlOiBge3IsIGVjaG8gPSBGQUxTRX1gCgoKCg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiSUJFQ291cnNlIgphdXRob3I6ICJNYXJpbmEgQWx2YXJleiAmIFBhdWxhIEVzdGVsbGVyIgpkYXRlOiAnMjAyMi0wNy0xMScKb3V0cHV0OiAKICBodG1sX25vdGVib29rOiAKICAgIGhpZ2hsaWdodDogcHlnbWVudHMKLS0tCgoKCiMgMXN0IGxvb2sgYXQgUm1hcmtkb3duCgpgYGB7ciBzZXR1cCwgaW5jbHVkZT1GQUxTRX0Ka25pdHI6Om9wdHNfY2h1bmskc2V0KGVjaG8gPSBUUlVFKQpgYGAKCiMjIFIgTWFya2Rvd24KClRoaXMgaXMgYW4gUiBNYXJrZG93biBkb2N1bWVudC4gTWFya2Rvd24gaXMgYSBzaW1wbGUgZm9ybWF0dGluZyBzeW50YXggZm9yIGF1dGhvcmluZyBIVE1MLCBQREYsIGFuZCBNUyBXb3JkIGRvY3VtZW50cy4gRm9yIG1vcmUgZGV0YWlscyBvbiB1c2luZyBSIE1hcmtkb3duIHNlZSA8aHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbT4uCgpXaGVuIHlvdSBjbGljayB0aGUgKipLbml0KiogYnV0dG9uIGEgZG9jdW1lbnQgd2lsbCBiZSBnZW5lcmF0ZWQgdGhhdCBpbmNsdWRlcyBib3RoIGNvbnRlbnQgYXMgd2VsbCBhcyB0aGUgb3V0cHV0IG9mIGFueSBlbWJlZGRlZCBSIGNvZGUgY2h1bmtzIHdpdGhpbiB0aGUgZG9jdW1lbnQuIFlvdSBjYW4gZW1iZWQgYW4gUiBjb2RlIGNodW5rIGxpa2UgdGhpczoKCmBgYHtyIGNhcnN9CnN1bW1hcnkoY2FycykKYGBgCgojIyBJbmNsdWRpbmcgUGxvdHMKCllvdSBjYW4gYWxzbyBlbWJlZCBwbG90cywgZm9yIGV4YW1wbGU6CgpgYGB7ciBwcmVzc3VyZSwgZWNobz1GQUxTRX0KcGxvdChwcmVzc3VyZSkKYGBgCgpOb3RlIHRoYXQgdGhlIGBlY2hvID0gRkFMU0VgIHBhcmFtZXRlciB3YXMgYWRkZWQgdG8gdGhlIGNvZGUgY2h1bmsgdG8gcHJldmVudCBwcmludGluZyBvZiB0aGUgUiBjb2RlIHRoYXQgZ2VuZXJhdGVkIHRoZSBwbG90LgoKCiMgRm9ybWF0dGluZyB3aXRoIFJtYXJrZG93bgoKIyMgSGVhZGVycwoKVXNpbmcgIiMiIGF0IHRoZSBiZWdpbm5pbmcgb2YgYSBsaW5lIHdlIGNhbiBmb3JtYXQgaXQgYXMgYSBIZWFkZXIsIGFuZCB0aGUgbW9yZSAjIHdlIHB1dCwgdGhlIGxvd2VyIGxldmVsIHdpbGwgdGhpcyBoYXZlLgpTZWU6CgojIEhlYWRlciAxCiMjIEhlYWRlciAyCiMjIyBIZWFkZXIgMwojIyMjIEhlYWRlciA0CiMjIyMgSGVhZGVyIDUKCiMjIE90aGVyIGZvcm1hdHRpbmcgb3B0aW9ucwoKWW91IGNhbiBoaWdobGlnaHQgdGV4dDogKipib2xkKiogdGV4dCwgKml0YWxpY3MqLCBhbmQgKioqYm90aCoqKi4KCk9yIHlvdSBjYW4gZXZlbiBjcmVhdGUgYnVsbGV0IGxpc3RzOgoKLSAxc3QgUGhEIHllYXIKLSAybmQgUGhEIHllYXIKLSAzcmQgUGhEIHllYXIKKiA0dGggUGhEIHllYXIKCiMjIE90aGVyIGJhc2ljIGZvcm1hdGluZyBvcHRpb25zOgoKQ2xpY2sgYXQgdGhlIGJvdHRvbSB3aGVlbCBidXR0b24sIHRoZW4gZ28gdG8gIk91dHB1dCBvcHRpb25zLi4uIiBhbmQgdGhlcmUgeW91IGNhbiBjaG9vc2UgYSB0aGVtZSwgaW5jbHVkZSBhIHRhYmxlIG9mIGNvbnRlbnRzLCBldGMuCgoKIyBDb2RpbmcgYmxvY2tzCgpZb3UgY2FuIGluc2VydCBhIG5ldyBjb2RpbmcgYmxvY2sgYnkgY2xpY2tpbmcgQ3RybCtBbHQraSAoV2luZG93cyk6CmBgYHtyfQojIHRoaXMgaXMgYSBjb2RpbmcgYmxvY2sKYGBgCgoKSWYgeW91IGRvIG5vdCB3YW50IHRvIHNob3cgdGhlIGNvZGluZyBibG9jayBvbiB5b3VyIGZpbmFsIGRvY3VtZW50IHlvdSBzZXQgYGVjaG8gPSBGQUxTRWAgaW5zaWRlIHRoZSBge3J9YCwgd2hpY2ggd2lsbCBsb29rIGxpa2U6IGB7ciwgZWNobyA9IEZBTFNFfWAuCgoKCkl0IGlzIHZlcnkgdXNlZnVsIHRvIGZpbmlzaCB5b3VyIFJtYXJrZG93biByZXBvcnQgd2l0aCB0aGUgZm9sbG93aW5nIGNvZGUuIEl0IGNvbnRhaW5zIGFsbCB0aGUgaW5mb3JtYXRpb24gcmVnYXJkaW5nIHRoZSBSIHZlcnNpb24gdXNlZCBhcyB3ZWxsIGFzIHRoZSBwYWNrYWdlcyB0aGF0IHlvdSBsb2FkZWQuIFRoZXJlZm9yZSwgaWYgaW4gdGhlIGZ1dHVyZSB5b3UgbmVlZCB0byBydW4gdGhlIGNvZGUgYWdhaW4geW91IHdpbGwga25vdyB0aGVzZSBzcGVjaWZpY2F0aW9ucy4gCgpgYGB7cn0KIyBpbnN0YWxsLnBhY2thZ2VzKCJkZXRhaWxzIikKbGlicmFyeShkZXRhaWxzKQpzZXNzaW9uSW5mbygpCmBgYAoKCgo=</div>
 
 
 
