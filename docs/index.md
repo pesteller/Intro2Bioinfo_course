@@ -17,7 +17,7 @@ less -S $GTEX
 ![image](https://user-images.githubusercontent.com/68989675/178304599-195eb9b0-250f-4ac9-8f5b-5e19a735260c.png)
 
 
-**Q.** Which is the difference between `less` and `less -S`?
+**Question 1.** Which is the difference between `less` and `less -S`?
 
 If you want to see it more nicely and column aligned you can use `column -t` option:
 ```
