@@ -18,4 +18,3 @@ Crash course for 1st Year PhD students on the basics of bioinformatics (July 202
 
 
 
-file:///Volumes/GoogleDrive/My%20Drive/Varis/2022_IBECourse/IBECourse_IntroRmarkdown.nb.html
