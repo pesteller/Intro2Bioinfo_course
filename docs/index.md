@@ -32,44 +32,23 @@ head -n 1 $GTEX | tr "\t" "\n" > header.txt
 ```
 **Q.** Apart from using the `head` command, which other alternatives could you use to obtain the header? (hide this chunck)
 
-<details><summary>See answer</summary>
-<p>
-
-```python
-grep "Name" $GTEX
-grep -v "ENS" $GTEX
-```
-
-</p>
-</details>
-
-
 <details closed>
 
-  <summary>click to collapse</summary>
+  <summary>See answer 1</summary>
 
-  ```python
+  ```bash
   grep "Name" $GTEX
-  grep -v "ENS" $GTEX
   ```
 
 </details>
 
-
-
-NEXT ATTEMPT
-
-{::options parse_block_html="true" /}
-
-<details><summary markdown="span">Let's see some code!</summary>
-```python
-print('Hello World!')
+<details><summary markdown="span">See answer 2</summary>
+```bash
+grep -v "ENS" $GTEX
 ```
-Of course, it has to be Hello World, right?
 </details>
 <br/>
 
-{::options parse_block_html="false" /}
 
 
 ```
