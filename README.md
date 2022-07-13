@@ -11,10 +11,10 @@ Crash course for 1st Year PhD students on the basics of bioinformatics (July 202
 ## II. R for Bioinformatics
 
 ## III. Recommended literature and other resources
-* Buffalo, Vince. 2015. Bioinformatics data skills. (O'Reilly)
+* Buffalo, Vince. Bioinformatics data skills (2015, O'Reilly)
 * [GeeksforGeeks webpage](https://www.geeksforgeeks.org/awk-command-unixlinux-examples/) with awk command examples (and others)
-* [Rstudio cheatsheets from github](https://github.com/rstudio/cheatsheets)
 * [Bash scripting cheatsheet](https://devhints.io/bash)
+* [Rstudio cheatsheets from github](https://github.com/rstudio/cheatsheets)
 
 
 
