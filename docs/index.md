@@ -97,6 +97,9 @@ We can see how the only difference between the two files is in the header. Which
 sed -i 's/ //g' $GTEX
 ```
 
+**Q.** Save this new file as:
+ GTEx_v8_gene_median_tpm_formatted.gct
+
 Let's check which is the column that has information about the "Liver".
 There are several ways to do so:
 * Option 1:
