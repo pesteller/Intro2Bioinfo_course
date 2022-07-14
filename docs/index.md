@@ -78,15 +78,15 @@ For this we will use `sed` to remove the spaces within IDs:
 head -1 $GTEX | sed 's/ //g' | awk '{FS = "\t"; print NF}'
 ```
 
-But what if we want to do this change and keep it in the orginal file withtout creating a new one?
+But what if we want to apply this change in the orginal file withtout creating a new one?
 One could use `sed -i`; which directly modifies the input file. Careful: you need to be sure that the pattern you want to change is only present in your header so that it does not change the rest of the file.
 
-In our case we first create a subfile:
+In our case, to make sure this is safe, we first create a subfile:
 ```
 sed  's/ //g' $GTEX > GTEX2
 ``` 
 
-Then we use `diff` to check the differences between the original file and the subfile we have create as a sannity check:
+And then we use `diff` to check the differences between the original file and the subfile we have created as a sannity check:
 ```
 diff $GTEX GTEX2
 ```
@@ -97,8 +97,8 @@ We can see how the only difference between the two files is in the header. Which
 sed -i 's/ //g' $GTEX
 ```
 
-**Q.** Save this new file as:
- GTEx_v8_gene_median_tpm_formatted.gct
+**E.** Apply another change to the file to change `-` for `_` and save it as GTEx_v8_gene_median_tpm_formatted.gct.
+
 
 Let's check which is the column that has information about the "Liver".
 There are several ways to do so:
