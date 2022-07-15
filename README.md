@@ -1,5 +1,5 @@
 # IBE PhD Course: Introduction to Bioinfomatics
-*Materials created by Marina Álvarez and Paula Esteller.*
+*Materials created by [Marina Álvarez](https://github.com/maralest) and [Paula Esteller](https://github.com/pesteller).*
 
 
 Crash course for 1st Year PhD students on the basics of bioinformatics (July 2022).
