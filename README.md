@@ -18,6 +18,7 @@ Crash course for 1st Year PhD students on the basics of bioinformatics (July 202
 * [GeeksforGeeks webpage](https://www.geeksforgeeks.org/awk-command-unixlinux-examples/) with awk command examples (and others)
 * [Bash scripting cheatsheet](https://devhints.io/bash)
 * [Rstudio cheatsheets from RStudio's github](https://github.com/rstudio/cheatsheets)
+* [Markdown Guide: Basic Syntax](https://www.markdownguide.org/basic-syntax/)
 
 
 
