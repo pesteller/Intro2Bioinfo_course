@@ -14,10 +14,10 @@ Crash course for 1st Year PhD students on the basics of bioinformatics (July 202
 2. Practicum: R markdown
 
 ## III. Recommended literature and other resources
-* Buffalo, Vince. Bioinformatics data skills (2015, O'Reilly)
+* [Buffalo, Vince. Bioinformatics data skills (2015, O'Reilly)](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
 * [GeeksforGeeks webpage](https://www.geeksforgeeks.org/awk-command-unixlinux-examples/) with awk command examples (and others)
 * [Bash scripting cheatsheet](https://devhints.io/bash)
-* [Rstudio cheatsheets from github](https://github.com/rstudio/cheatsheets)
+* [Rstudio cheatsheets from RStudio's github](https://github.com/rstudio/cheatsheets)
 
 
 
