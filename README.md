@@ -11,7 +11,9 @@ Crash course for 1st Year PhD students on the basics of bioinformatics (July 202
 
 ## II. R for Bioinformatics
 1. [Slides](https://docs.google.com/presentation/d/1jem2JXrsB3Sj4-v2sp_3t3i2vIG6_I6FhwPZ-wTPQdo/edit?usp=sharing)
-2. Practicum: R markdown
+2. Practicum
+    1. Introduction to Rmarkdown: Intro2Rmarkdown_IBECourse.nb.html
+    2. Using R to explore expression data: R4Bioinformatics_IBECourse2022.nb.html
 
 ## III. Recommended literature and other resources
 * [Buffalo, Vince. Bioinformatics data skills (2015, O'Reilly)](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
