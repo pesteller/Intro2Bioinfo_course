@@ -148,5 +148,5 @@ do
 done | sort -k2 -nr | head
 ```
 
-**Question 10.** How many genes have a gene expression value < 0.1 TMP in each tissue? 
+**Question 10.** How many genes have a gene expression value between 5 and 300 TMP in Brain? 
 
