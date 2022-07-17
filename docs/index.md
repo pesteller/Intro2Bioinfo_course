@@ -1,5 +1,5 @@
 # Part I. Basics of bash
-*Materials created by Marina Álvarez and Paula Esteller.*
+*Materials created by [Marina Álvarez](https://github.com/maralest) and [Paula Esteller](https://github.com/pesteller).*
 
 In this practical part we will be analysing human RNA-seq expression data from the [GTEx consortium (version 8)](https://gtexportal.org/home/) using basic bash commands. For that we first need to download the [data](https://github.com/pesteller/Intro2Bioinfo_course/blob/main/GTEx_v8_gene_median_tpm.gct) from which we will be working on.
 
@@ -21,7 +21,7 @@ less -S $GTEX
 
 If you want to see it more nicely and column aligned you can use `column -t` option:
 ```
-less -S $GTEX | column -t | less -S
+column -t $GTEX | less -S
 ```
 
 You can also check which are the first or the last rows of your document by using `head $yourfile` or `tail $yourfile`.
