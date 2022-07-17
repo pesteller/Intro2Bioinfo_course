@@ -3,7 +3,7 @@
 
 In this practical part we will be analysing human RNA-seq expression data from the [GTEx consortium (version 8)](https://gtexportal.org/home/) using basic bash commands. For that we first need to download the [data](https://github.com/pesteller/Intro2Bioinfo_course/blob/main/GTEx_v8_gene_median_tpm.gct) from which we will be working on.
 
-## 1.Exploring the dataset
+## 1. Exploring the dataset
 
 Save the dataset in a bash variable:
 ```
@@ -79,6 +79,7 @@ sed -i 's/ //g' $GTEX
 
 **Question 5.** Apply another change to the file in order to change mid dashes (`-`) for underscores (`_`) and save the resulting file as `GTEx_v8_gene_median_tpm_formatted.gct`.
 
+## 2. Retriving relevant information from the dataset
 
 Let's check which is the column that has information about the *Liver*.
 There are several ways to do so:
