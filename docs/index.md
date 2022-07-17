@@ -118,7 +118,7 @@ tail -n +2 $GTEX | cut -f $col | sort -V | tail
 tail -n +2 $GTEX | cut -f $col | sort -g | tail
 ```
 
-**Question 7.** What is the minimum? How many times is it present?
+**Question 7.** What is the minimum gene expressio value? How many times is it present?
 ```
 tail -n +2 $GTEX | cut -f $col | sort -g | uniq -c | sort -nr | head
 ```
