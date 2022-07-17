@@ -122,3 +122,30 @@ tail -n +2 $GTEX | cut -f $col | sort -g | tail
 ```
 tail -n +2 $GTEX | cut -f $col | sort -g | uniq -c | sort -nr | head
 ```
+
+**Question 8.** Can you calculate the mean gene expression value for each tissue? Which of them has the highest mean expression value?
+```
+num_cols=$(head -1 $GTEX | tr "\t" "\n" | wc -l)
+
+for i in $(seq 3 $num_cols);
+do
+   tissue=$(head -1 $GTEX | cut -f$i); 
+   mean_expr=$(awk -v column=$i '{sum+=$column} END {print sum/NR}' <( tail -n +2 $GTEX)); 
+   echo -e $tissue"\t"$mean_expr; 
+done
+```
+
+**Question 9.** How many genes are lowly expressed (gene expression value < 0.1 TMP) in each tissue? Which of them has the highest number of lowly expressed genes?
+```
+num_cols=$(head -1 $GTEX | tr "\t" "\n" | wc -l)
+
+for i in $(seq 3 $num_cols);
+do
+   tissue=$(head -1 $GTEX | cut -f$i); 
+   low_expression=$(awk -v column=$i '{if ($column <= 0.1) {sum+=1}} END {print sum}' <( tail -n +2 $GTEX)); 
+   echo -e $tissue"\t"$low_expression; 
+done | sort -k2 -nr | head
+```
+
+**Question 10.** How many genes have a gene expression value < 0.1 TMP in each tissue? 
+
