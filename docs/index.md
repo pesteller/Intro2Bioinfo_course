@@ -97,6 +97,7 @@ awk '{print $38}' $GTEX
 ```
 
 * Option 2: The variable + `awk` version
+
 ```
 # First transpose the header line
 head -1 $GTEX | tr "\t" "\n"
