@@ -28,18 +28,16 @@ You can also check which are the first or the last rows of your document by usin
 
 **Question 2.** Save the header line of the document in 1 column. Save it in a new document entitled: `header.txt`
 ```
-head -n 1 $GTEX | tr "\t" "\n" > header.txt
+# Type your answer here
 ```
 **Question 3.** Apart from using the `head` command, which other alternatives could you use to obtain the header?
 ```
-grep "Name" $GTEX
-grep -v "ENS" $GTEX
+# Type your answer here
 ```
 
 **Question 4.** How many genes are in this dataset
 ```
-tail -n +2 $GTEX | wc -l
-grep -c "ENS" $GTEX
+# Type your answer here
 ```
 
 Now we want to check how many tissues have been considered. We will do this with `awk`:
@@ -108,7 +106,7 @@ cut -f$col $GTEx | head
 
 **Question 6.** What is the average expression value in the *Liver*?
 ```
-awk -v col=$col '{print $col}' $GTEX | tail -n 2 | awk '{sum+=$0} END {print sum/NR}'
+# Type your answer here
 ```
 
 Let's get some other metrics (min and max):
@@ -121,32 +119,22 @@ tail -n +2 $GTEX | cut -f $col | sort -g | tail
 
 **Question 7.** What is the minimum gene expressio value? How many times is it present?
 ```
-tail -n +2 $GTEX | cut -f $col | sort -g | uniq -c | sort -nr | head
+# Type your answer here
 ```
 
 **Question 8.** Can you calculate the mean gene expression value for each tissue? Which of them has the highest mean expression value?
 ```
-num_cols=$(head -1 $GTEX | tr "\t" "\n" | wc -l)
-
-for i in $(seq 3 $num_cols);
-do
-   tissue=$(head -1 $GTEX | cut -f$i); 
-   mean_expr=$(awk -v column=$i '{sum+=$column} END {print sum/NR}' <( tail -n +2 $GTEX)); 
-   echo -e $tissue"\t"$mean_expr; 
-done
+# Type your answer here
 ```
 
-**Question 9.** How many genes are lowly expressed (gene expression value < 0.1 TMP) in each tissue? Which of them has the highest number of lowly expressed genes?
+**Question 9.** How many genes are lowly expressed (gene expression value < 0.1 TPM) in each tissue? Which of them has the highest number of lowly expressed genes?
 ```
-num_cols=$(head -1 $GTEX | tr "\t" "\n" | wc -l)
-
-for i in $(seq 3 $num_cols);
-do
-   tissue=$(head -1 $GTEX | cut -f$i); 
-   low_expression=$(awk -v column=$i '{if ($column <= 0.1) {sum+=1}} END {print sum}' <( tail -n +2 $GTEX)); 
-   echo -e $tissue"\t"$low_expression; 
-done | sort -k2 -nr | head
+# Type your answer here
 ```
 
-**Question 10.** How many genes have a gene expression value between 5 and 300 TMP in Brain? 
+**Question 10.** How many genes have a gene expression value between 5 and 300 TPM in Brain? 
+```
+# Type your answer here
+```
+
 
